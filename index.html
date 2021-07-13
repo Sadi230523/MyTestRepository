@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Documentation - JobPoint</title>
+        <link rel="shortcut icon" href="images/logo/icon.png"/>
+        <link rel="apple-touch-icon" href="images/logo/icon.png"/>
+        <link rel="apple-touch-icon-precomposed" href="images/logo/icon.png"/>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+              integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+              crossorigin="anonymous">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/doc.css">
+    </head>
+
+    <body class="custom-scrollbar">
+        <div class="d-none" id="top"></div>
+
+        <main>
+            <div class="d-flex">
+                <aside>
+                    <div class="toggle-sidebar">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <div class="doc-left-menus-panel custom-scrollbar">
+                        <div class="logo-wrapper">
+                            <img src="images/logo.png" class="img-fluid mx-auto" width="160" alt="">
+                        </div>
+
+                        <ul class="nav flex-column">
+                            <!--Introduction-->
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Introduction</a>
+                            </li>
+
+                            <!--Installation-->
+                            <li class="nav-item">
+                                <a href="installation.html" class="nav-link">Installation</a>
+                            </li>
+                            <li class="nav-item d-none">
+                                <ul class="sub-list-link-group">
+                                    <li>
+                                        <a href="#serverRequirement" class="js-page-scrolling">Server requirements</a>
+                                    </li>
+                                    <li>
+                                        <a href="#howToInstall" class="js-page-scrolling">How to Install</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!--Instruction Guide-->
+                            <li class="nav-item">
+                                <a href="instruction-guide.html" class="nav-link">Instruction Guide</a>
+                            </li>
+                            <li class="nav-item d-none">
+                                <ul class="sub-list-link-group">
+                                    <li>
+                                        <a href="#dashboard" class="js-page-scrolling">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="#candidates" class="js-page-scrolling">Candidates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#career-page" class="js-page-scrolling">Career Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#userRoles" class="js-page-scrolling">Users & Roles</a>
+                                    </li>
+                                    <li>
+                                        <a href="#settings" class="js-page-scrolling">Settings</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="developer-guide.html" class="nav-link">Developer Guide</a>
+                            </li>
+
+                            <!--Upgrade guide-->
+                            <li class="nav-item">
+                                <a href="upgrade-guide.html" class="nav-link">Upgrade Guide</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="change-log.html" class="nav-link">Change Log</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <section class="main-content">
+                    <div id="introduction">
+                        <h3>Introduction</h3>
+                        <p>
+                            <span class="font-weight-bolder">JobPoint</span>
+                            is the online software solution to manage job posting to job hiring process for Job recruiters in a quick and efficient way. JobPoint software aims to simplify the process of job advertisement, jobs orientation, job interviews and employee selection to maintaining employer-employee relationship.
+                            This technology is brilliantly crafted in such a way that you may post your job on the web and visit the website to interview the candidate. All of the work will be done automatically by this tool.
+                        </p>
+
+                        <h5>
+                            Why JobPoint?
+                        </h5>
+                        <ul class="list-style-hash">
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-bold mb-0">Informative dashboard to manage Job Posts</p>
+                                <p class="font-weight-light text-secondary">
+                                    JobPoint helps you collaborate with candidates no matter their stage of application making your recruitment more efficient.
+                                    It works in extreme dynamic stages and lets you notify your team and candidates about a given state, like an interview request, a resume review, or a job offer.
+                                </p>
+
+                                <p class="font-weight-light text-secondary">
+                                    This is an application that helps you manage a job. This application is for recruiters who are hiring candidates.
+                                    It can be used to manage the job postings and also the candidates.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-bold mb-0">Candidate management</p>
+                                <p class="font-weight-light text-secondary">
+                                    Recruiters and hiring managers, welcome to JobPoint, the candidate management system designed to help you recruit better candidates and hire faster.
+                                    JobPoint offers an array of features that will take your recruitment program to new heights.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-bold mb-0">Career Page</p>
+                                <p class="font-weight-light text-secondary">
+                                    We make job hunting easier because we allow you to post job listings on a platform that you control. JobPoint is powerful, easy to use and geared towards the recruiter and the candidate.
+                                    We're here to help create new jobs, not just fill them.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-bold mb-0">Apply form:</p>
+                                <p class="font-weight-light text-secondary">
+                                    You can edit “Apply Form” setting. Which can be applied to the application form that applicants will use to apply for the job. After editing you can then save changes. You can also preview the Application form.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-bold mb-0">Permission and Role based User Creation</p>
+                                <p class="font-weight-light text-secondary">
+                                    There are few excited features of this app. Permission based user creation. This helps in hiring team traffic and getting the targeted audience to the right candidate.
+                                    Recruiter & HR can use it for managing the hiring team for each individual jobs.
+                                    With the help of this app Recruiters will be able to get maximum output in minimum time.
+                                    This is the web app in which the organization can hire the best talent quickly and painlessly.
+                                </p>
+                            </li>
+                            <li class="mb-2">
+                                <p class="font-italic font-weight-bold mb-0">And many more</p>
+                                <p class="font-weight-light text-secondary">
+                                    Lots of other ways to stay ahead like notifications, Candidate stage management etc.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <a class="js-page-scrolling back-to-top" href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+        </a>
+
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                crossorigin="anonymous"></script>
+        <script src="js/shCore.js" type="text/javascript"></script>
+        <script src="js/shAutoloader.js" type="text/javascript"></script>
+        <script src="js/shBrushXml.js" type="text/javascript"></script>
+        <script src="js/shBrushJScript.js" type="text/javascript"></script>
+        <script src="js/shBrushCss.js" type="text/javascript"></script>
+        <script src="js/doc.js" type="text/javascript"></script>
+    </body>
+</html>

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8"/>
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>Documentation - Jobpoint</title>
+        <link rel="shortcut icon" href="images/logo/icon.png"/>
+        <link rel="apple-touch-icon" href="images/logo/icon.png"/>
+        <link rel="apple-touch-icon-precomposed" href="images/logo/icon.png"/>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+              integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+              crossorigin="anonymous">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="css/doc.css">
+    </head>
+
+    <body class="custom-scrollbar">
+        <div class="d-none" id="top"></div>
+
+        <main>
+            <div class="d-flex">
+                <aside>
+                    <div class="toggle-sidebar">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+
+                    <div class="doc-left-menus-panel custom-scrollbar">
+                        <div class="logo-wrapper">
+                            <img src="images/logo.png" class="img-fluid mx-auto" width="160" alt="">
+                        </div>
+
+                        <ul class="nav flex-column">
+                            <!--Introduction-->
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Introduction</a>
+                            </li>
+
+                            <!--Installation-->
+                            <li class="nav-item">
+                                <a href="installation.html" class="nav-link">Installation</a>
+                            </li>
+                            <li class="nav-item d-none">
+                                <ul class="sub-list-link-group">
+                                    <li>
+                                        <a href="#serverRequirement" class="js-page-scrolling">Server requirements</a>
+                                    </li>
+                                    <li>
+                                        <a href="#howToInstall" class="js-page-scrolling">How to Install</a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <!--Instruction Guide-->
+                            <li class="nav-item active">
+                                <a href="instruction-guide.html" class="nav-link">Instruction Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <ul class="sub-list-link-group">
+                                    <li>
+                                        <a href="#dashboard" class="js-page-scrolling">Dashboard</a>
+                                        <ul class="sub-list-link-group">
+                                            <li><a href="#preview" class="js-page-scrolling">Preview</a></li>
+                                            <li><a href="#edit" class="js-page-scrolling">Edit</a></li>
+                                            <li><a href="#edit_job_post" class="js-page-scrolling">Edit Job Post</a></li>
+                                            <li><a href="#setting" class="js-page-scrolling">Setting</a></li>
+                                            <li><a href="#shareable_link" class="js-page-scrolling">Shareable link</a></li>
+                                            <li><a href="#publish_job" class="js-page-scrolling">Draft & Publish Job</a></li>
+                                            <li><a href="#deactivate_job" class="js-page-scrolling">De activate</a></li>
+                                            <li><a href="#activate_job" class="js-page-scrolling">Activate</a></li>
+                                            <li><a href="#delete_job" class="js-page-scrolling">Delete</a></li>
+                                            <li><a href="#event" class="js-page-scrolling">Events</a></li>
+                                            <li><a href="#todo" class="js-page-scrolling">Todos</a></li>
+                                            <li><a href="#overview" class="js-page-scrolling">Overview</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#candidates" class="js-page-scrolling">Candidates</a>
+                                    </li>
+                                    <li>
+                                        <a href="#career-page" class="js-page-scrolling">Career Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="#userRoles" class="js-page-scrolling">Users & Roles</a>
+                                    </li>
+                                    <li>
+                                        <a href="#settings" class="js-page-scrolling">Settings</a>
+                                        <ul class="sub-list-link-group">
+                                            <li><a href="#app-setting" class="js-page-scrolling">App Setting</a></li>
+                                            <li><a href="#job-setting" class="js-page-scrolling">Job Setting</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="developer-guide.html" class="nav-link">Developer Guide</a>
+                            </li>
+                            <!--Upgrade guide-->
+                            <li class="nav-item">
+                                <a href="upgrade-guide.html" class="nav-link">Upgrade Guide</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="change-log.html" class="nav-link">Change Log</a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <section class="main-content">
+                    <!--Dashboard-->
+                    <div class="scrollspy-section mb-5" data-for="dashboard">
+
+                        <div id="dashboard" class="scrollspy-section mb-5" data-for="dashboard">
+                            <h3>Dashboard</h3>
+                            <p>User can Manage jobs, his event & todo list here, You can,</p>
+
+                            <!-- Filter Job post-->
+                            <ul>
+                                <li>View a list of your <em>Jobs</em>.</li>
+                                <li>Filter your job list by <em>Active / Inactive / Draft Jobs</em>.<br>
+                                    <ul>
+                                        <li><em>Active :</em> The jobs which are published and accessible publicly.</li>
+                                        <li><em>Inactive :</em> The jobs which are closed.</li>
+                                        <li><em>Draft Jobs :</em> The jobs which are newly created yet to be published.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <img src="images/dashboard/dashboard-job-status-filter.png" class="img-thumbnail" alt="">
+                            <!-- job Options -->
+                            <div class="scrollspy-section mb-5" data-for="option">
+                                <div id="option">
+                                    <p>By clicking the option we perform different action on Dashboard</p>
+                                    <img src="images/dashboard/dashboard-interface.png" class="img-thumbnail" alt="">
+                                    <p>Actions are -</p>
+                                    <ul>
+                                        <li>Preview</li>
+                                        <li>Edit </li>
+                                        <li>Edit job post </li>
+                                        <li>Settings </li>
+                                        <li>Sharable link</li>
+                                        <li>activate job</li>
+                                        <li>De-activate</li>
+                                        <li>publish job</li>
+                                        <li>Delete</li>
+                                    </ul>
+
+                                </div>
+                                <div id="preview">
+                                    <h5>Preview</h5>
+                                    <p></p>
+                                    <img src="images/dashboard/dashboard-jobpost-preview.png" class="img-thumbnail" alt="">
+                                </div>
+                                <div id="edit">
+                                    <h5>Edit</h5>
+                                    <p>To edit the basic Information of a Job, Click edit on option menu</p>
+                                    <img src="images/dashboard/option/edit_job.png" class="img-thumbnail" alt="">
+                                </div>
+                                <div id="edit_job_post">
+                                    <h5>Edit job post</h5>
+                                    <p>To edit a "Job Post", Click edit on option menu. This job is publicly accessible information for a job post.</p>
+                                    <img src="images/dashboard/dashboard-edit-job-post.png" class="img-thumbnail" alt="">
+                                </div>
+                                <div id="setting">
+                                    <h5>Setting</h5>
+                                    <p>
+                                        Setting is a place where you can "edit/delete" settings for a specific job. You can-
+                                        edit "Apply Form", "Job Stages" & Assign Members into the "Hiring Team" for that specific job.
+                                        <img src="images/dashboard/option/application_form.png" class="img-thumbnail" alt="">
+                                    </p>
+                                    Below we will describe details about this.
+                                    <ul>
+                                        <li>
+                                            <h5>Apply Form</h5>
+                                            <p>
+                                                You can edit “Apply Form” setting. Which can be applied to the application form that applicants will use to apply for the job. After editing you can then save changes. You can also preview the Application form.
+                                            </p>
+                                            <h6>Features of "Apply Form"</h6>
+                                            <ul>
+                                                <li>Can save changes</li>
+                                                <li>Can preview "Apply form".</li>
+                                                <li>Can Add New Section.</li>
+                                                <li>Can hide/show a Section.</li>
+                                                <li>Can add/edit/delete a field of a specific section. </li>
+                                                <li> Basic Information section and its fields cannot edit or hide.</li>
+                                            </ul>
+                                            <img src="images/dashboard/option/application_form.png" class="img-thumbnail" alt="">
+                                        </li>
+                                        <li>
+                                            <h5>Job Stage</h5>
+                                            <p>
+                                                Using job stage you can "add/edit/delete"  Specific Job Stages.
+                                                <strong>where-</strong>
+                                            </p>
+                                            <ul>
+                                                <li>Stage named: <strong>new</strong>, <strong>hired</strong>, <strong>disqualified</strong> cannot be altered or edited.</li>
+                                                <li>When an applicant applied for this specific job he/she will be on <strong>new</strong> stage</li>
+                                                <li>When an applicant is hired he/she will be on <strong>hired</strong> stage</li>
+                                                <li>When an applicant is disqualified he/she will be on <strong>disqualified</strong> stage.</li>
+                                            </ul>
+                                            <img src="images/dashboard/option/job_stages.png" class="img-thumbnail" alt="">
+                                        </li>
+                                        <li>
+                                            <h5>Hiring Team</h5>
+                                            <p>With "Hiring Team" you can assign team member for this job. Those member can manage this specific job.</p>
+                                            <strong>Features are</strong>
+                                            <ul>
+                                                <li>You can "add" member to this job</li>
+                                                <li>You can "delete" member form this job</li>
+                                                <li>
+                                                    <img src="images/dashboard/option/hiring_team.png" class="img-thumbnail" alt="">
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div id="shareable_link">
+                                    <h5>Shareable Link</h5>
+                                    <p>You can share this job post by clicking shareable link. Once you click, a pop up model will open and display a shareable link. Which can be copied and later you can use it in social media and other platform. It will be used by applicant to apply for this job.</p>
+                                    <img src="images/dashboard/option/shareable_link.png" class="img-thumbnail" alt="">
+                                </div>
+                                <div id="publish_job">
+                                    <h5>Draft & Publish Job</h5>
+                                    <p> By default, when a user creates a job, it is in "draft job" status. You can see all your draft job by clicking filter "draft". You can After configuring necessary setting, you can publish the job.</p>
+                                    <img src="images/dashboard/option/publish_job.png" class="img-thumbnail" alt="">
+                                </div>
+                                <div id="deactivate_job">
+                                    <h5>De-activate Job</h5>
+                                    <p> To de-activate the job you can click the de-activate job option.</p>
+                                </div>
+                                <div id="activate_job">
+                                    <h5>Activate/Reactivate Closed Job</h5>
+                                    <p>To de-activate the job you can click the de-activate job option</p>
+                                </div>
+                                <div id="delete_job">
+                                    <h5>Delete Closed Job</h5>
+                                    <p>You can only delete de-activated job. To delete a job you first need to de-activated it. then click delete job option</p>
+                                    <img src="images/dashboard/dashboard-delete-job-post.png" class="img-thumbnail" alt="">
+                                </div>
+                            </div>
+
+                            <!-- Events  -->
+                            <div id="event" class="scrollspy-section mb-5" data-for="option">
+                                <h4>Events for user</h4>
+                                <p>
+                                    User can see his recent events in his dashboard. 
+                                    Features are-
+                                <ul>
+                                    <li>
+                                        You can see all your events by clicking 'view all'.
+                                        <img src="images/dashboard/event/all_events.png" class="img-thumbnail" alt="">
+                                    </li>
+                                    <li>
+                                        You can see a specific event details by clicking on a event.
+                                        <img src="images/dashboard/event/event_details.png" class="img-thumbnail" alt="">
+                                    </li>
+                                </ul>
+                                </p>
+                            </div>
+
+                            <!-- To do  -->
+                            <div id="todo" class="scrollspy-section mb-5" data-for="option">
+                                <h4>Todo for user</h4>
+                                <p>
+                                    User can see all to-dos in his dashboard.
+                                    Features are-
+                                <ul>
+                                    <li>
+                                        You can add a task to todo.
+                                        <img src="images/dashboard/todos/todos.png" class="img-thumbnail" alt="">
+                                    </li>
+                                    <li>You can mark tasks as completed by checking on the task.</li>
+                                    <li>You can delete both completed and incomplete task .</li>
+                                </ul>
+                                </p>
+                            </div>
+
+                            <!-- Job Overview -->
+                            <div id="overview" class="scrollspy-section mb-5">
+                                <h4 style="margin-top: 20px;">To get Specific job overview click overview <strong>Overview</strong> button at specific job</h4>
+                                <!--Delete job-->
+                                <p>At job overview page you can manage candidates for specific job. It shows a Kanban view. Where column means Job stages. You can move candidate from one stage to another simply dragging the candidate.</p>
+                                <img src="images/overview/landing_page.png" class="img-thumbnail" alt="">
+                                <p>You can-</p>
+                                <ul>
+                                    <li>Move candidate from one stage to another stage</li>
+                                    <li>You can add candidate to this job</li>
+                                    <li>
+                                        <p>By Clicking On the candidate you can manage.</p>
+                                        <img src="images/overview/manage_candidate.png" class="img-thumbnail" alt="">
+
+                                        <ul>
+                                            <li>You can set interview with specific candidate by clicking <strong>Event</strong> where you can assign attendees for this interview.</li>
+                                            <li>You can send custom email with specific candidate by clicking <strong>email icon</strong>.</li>
+                                            <li>You can disqualify specific candidate by clicking <strong>disqualify</strong> icon.</li>
+                                            <li>You can give review specific candidate by clicking <strong>star</strong> icon.</li>
+                                            <li>You can also change stage specific candidate by clicking <strong>change stage</strong> icon.</li>
+                                            <li>You can add interview related notes with specific candidate by clicking <strong>note</strong> tab.</li>
+                                            <li>You can view the timeline activities for specific candidate by clicking <strong>timeline</strong> tab.</li>
+                                            <li>
+                                                You can view applicants information by clicking <strong>applicant details</strong>, <strong>question & answer</strong>, <strong>attachment</strong> tab.
+                                                Basically, when an applicant applied online for a specific job. He may fill up the apply form. It can be determined whether an applicant should require/not require to fill up those information
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <p>There is a tab to display all candidates list for this job. named 'Candidates'.</p>
+                                        <img src="images/overview/all_candidates.png" class="img-thumbnail" alt="">
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!--Candidates-->
+                    <div class="scrollspy-section mb-5" data-for="candidates">
+                        <div id="candidates" class="scrollspy-section mb-5">
+
+                            <h4>Candidates</h4>
+                            <p>User can Manage Candidates here. You can,</p>
+
+                            <!-- Filter Job post-->
+                            <ul>
+                                <li>View a list of your <em>Candidates</em>.</li>
+
+                                <li>Candidate list will be shown without disqualified candidates by default</li>
+                                <li>You can see disqualified candidates by using <em>Status</em> filter by selection <em>Disqualified</em> </li>
+                                <li>Filter your Candidate list by <em>Applied date, Job, Status, Review, Gender</em>.<br>
+                                    <ul>
+                                        <li><em>Applied date :</em> Filter list by candidates applied date.</li>
+                                        <li><em>Job :</em> Filter list by job post.</li>
+                                        <li><em>Review :</em> Filter list by review given.</li>
+                                        <li><em>Gender :</em> Filter list by gender.</li>
+                                    </ul>
+                                </li>
+                                <li>Candidate who applied for multiple Job post can be seen <em>Job Application</em> Column.<br>
+                                    <ul>
+                                        <li>Click <em>Multi</em> to expand and see other posts which the can candidate applied</li>
+                                    </ul>
+                                    <ul>
+                                        <li><em>Single</em> means the candidate applied for only one job post</li>
+                                    </ul>
+                                    <img src="images/candidate/single_multi_applied_job.png" class="img-thumbnail" alt="">
+                                </li>
+                                <li>
+                                    You can add candidate manually by clicking <em>Add candidate</em>
+                                    <ul>
+                                        <li>Enter email to verify if the candidate is already in our system if not then add candidate </li>
+                                    </ul>
+                                    <ul>
+                                        <li>Already added candidate can only be assigned to job post</li>
+                                    </ul>
+                                    <img src="images/candidate/add_candidate.png" class="img-thumbnail" alt="">
+                                </li>
+                                <li>Available actions are <em>Assign Job, Edit, Delete, </em>.<br>
+                                    <ul>
+                                        <li><em>Assign Job :</em> Assign Candidate to a new job post.</li>
+                                        <li><em>Edit :</em> Edit candidate.</li>
+                                        <li><em>Delete :</em> Delete Candidate.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <p>By Clicking On the candidate you can manage.</p>
+                                    <img src="images/overview/manage_candidate.png" class="img-thumbnail" alt="">
+
+                                    <ul>
+                                        <li><em>Set event</em> with specific candidate by clicking <strong>Event</strong> where you can assign attendees for this interview.</li>
+                                        <li><em>Send custom email</em> with specific candidate by clicking <strong>email icon</strong>.</li>
+                                        <li><em>Disqualify</em> specific candidate by clicking <strong>disqualify</strong> icon.</li>
+                                        <li>Give <em>Review</em> specific candidate by clicking <strong>star</strong> icon.</li>
+                                        <li>Change <em>Stage</em> specific candidate by clicking <strong>change stage</strong> icon.</li>
+                                        <li>Add <em>Notes</em> with specific candidate by clicking <strong>note</strong> tab.</li>
+                                        <li>View <em>Timeline<em> activities for specific candidate by clicking <strong>timeline</strong> tab.</li>
+                                        <li>
+                                            You can view applicants information by clicking <strong>applicant details</strong>,<strong>question & answer</strong>,<strong>attachment</strong> tab.
+                                            Basically, when an applicant applied online for that specific job. He may fill up the apply form. It can be made optional whether he/she should be required/not required to fill up that information
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!--Career page-->
+                    <div class="scrollspy-section mb-5" data-for="career-page">
+                        <div id="career-page" class="scrollspy-section mb-5">
+                            <h4>Career page</h4>
+                            <p>User can design Career page here. You can,</p>
+                            <ul>
+                                <li>Design <em>Career page</em> as you want. This will be seen by candidates</li>
+                                <li>Get a Preview of the <em>Career page</em></li>
+                            </ul>
+                            <img src="images/career/career_page.png" class="img-thumbnail" alt="">
+                        </div>
+                    </div>
+
+                    <!--User & Roles-->
+                    <div id="userRoles" class="scrollspy-section mb-5">
+                        <h4>User & Roles</h4>
+                        <p>Create application <em>Users</em> and assign them particular <em>Roles</em> from here.</p>
+
+                        <p>Functions that you can perform here,</p>
+                        <img src="images/user_roles/user_roles.png" class="img-thumbnail" alt="">
+                        <ul>
+                            <li>
+                                Send invitations to email addresses to add them as application users.<br>
+                                <img src="images/user_roles/invite_user.png" class="img-thumbnail" alt="">
+                            </li>
+                            <li>
+                                Add <em>Role</em> with specific permissions. <br>
+                                <img src="images/user_roles/add_role.png" class="img-thumbnail" alt="">
+                            </li>
+                            <li>Filter them as <em>All Users, Active, Inactive</em> and <em>Invited</em>.</li>
+                            <li>
+                                Mange <em>User</em> with <em>Roles</em> <br>
+                                <img src="images/user_roles/manage_roles.png" class="img-thumbnail" alt="">
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <!--Settings-->
+                    <div id="settings" class="scrollspy-section mb-5">
+                        <h4>Setting</h4>
+                        <p>Set your <em>Application Setting</em> and <em>Job Setting</em> here.</p>
+                        <div id="app-setting" class="scrollspy-section mb-5" data-for="app-setting">
+                            <h4>App Setting</h4>
+                            <p>Set various settings which are essential to run the application.</p>
+
+                            <p>Functions that you can perform here,</p>
+                            <ul>
+                                <li>
+                                    Manage application General settings
+                                    <img src="images/settings/app_setting/setting_general.png" class="img-thumbnail mb-3" alt="">
+                                </li>
+                                <li>
+                                    Add Email service for <em>User invitation, successful application for candidates, disqualify candidate, create event</em> and <em>Receiving
+                                    Notifications</em>
+                                    <img src="images/settings/app_setting/setting_email_set_up.png" class="img-thumbnail mb-3" alt="">
+                                </li>
+                                <li>
+                                    Manage <em>Notifications</em> from Notification settings
+                                    <img src="images/settings/app_setting/setting_notification.png" class="img-thumbnail mb-3" alt="">
+                                </li>
+                                <li>Check for newer updates and Update for <em>New Features</em> and <em>Bug fixes</em>
+                                    <img src="images/settings/app_setting/setting_update.png" class="img-thumbnail mb-3" alt="">
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div id="job-setting" class="scrollspy-section mb-5" data-for="job-setting">
+                            <h4>Job Setting</h4>
+                            <p>Set your various job settings here which will perform as default job setting while setting up individual <em>Job Setting</em>.</p>
+
+                            <p>Functions that you can perform here,</p>
+                            <ul>
+                                <li>
+                                    Apply form:
+                                    <p>You can edit “Apply Form” setting. Which can be applied to the application form that applicants will use to apply for the job. After editing you can then save changes. You can also preview the Application form.
+                                    </p><img src="images/settings/job_setting/job_setting_appplication_form.png" class="img-thumbnail mb-3" alt="">
+                                </li>
+                                <li>
+                                    Hiring Stage:
+                                    <ul>
+                                        <li>Using hiring stage you can add/edit/delete specific Job Stages. where-
+                                            Stage named: new, hired, disqualified cannot be altered or edited.
+                                        </li>
+                                        <li>
+                                            When an applicant applied for this specific job he/she will be on new stage
+                                        </li>
+                                        <li>When an applicant is hired he/she will be on hired stage</li>
+                                        <li>When an applicant is disqualified he/she will be on disqualified stage.</li>
+                                    </ul>
+                                    <img src="images/settings/job_setting/hiring_stage.png" class="img-thumbnail mb-3" alt="">
+                                </li>
+                                <li>
+                                   Manage general event types
+                                    <img src="images/settings/job_setting/event_type.png" class="img-thumbnail mb-3" alt="">
+                                </li>
+                                <li>
+                                    Mange general job types
+                                    <img src="images/settings/job_setting/job_type.png" class="img-thumbnail mb-3" alt="">
+                                </li>
+                                <li>
+                                    Manage location form here
+                                    <img src="images/settings/job_setting/location.png" class="img-thumbnail mb-3" alt="">
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <a class="js-page-scrolling back-to-top" href="#top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+        </a>
+
+
+        <!-- JavaScript -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+                crossorigin="anonymous"></script>
+        <script src="js/shCore.js" type="text/javascript"></script>
+        <script src="js/shAutoloader.js" type="text/javascript"></script>
+        <script src="js/shBrushXml.js" type="text/javascript"></script>
+        <script src="js/shBrushJScript.js" type="text/javascript"></script>
+        <script src="js/shBrushCss.js" type="text/javascript"></script>
+        <script src="js/doc.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(window).bind('scroll', function () {
+                let currentTop = $(window).scrollTop();
+
+                $('.scrollspy-section').each(function (index) {
+                    let elemTop = $(this).offset().top - 55;
+                    let elemBottom = elemTop + $(this).height();
+                    if (currentTop >= elemTop && currentTop <= elemBottom) {
+                        let id = $(this).attr('id');
+                        let navElem = $('a[href="#' + id + '"]');
+                        navElem.parent().addClass('active').siblings().removeClass('active');
+                    }
+                })
+            });
+        </script>
+    </body>
+</html>
